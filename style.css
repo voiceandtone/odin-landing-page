@@ -22,6 +22,14 @@ h1 {
     color: #f9faf8;
 }
 
+h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+    text-align: center;
+    padding: 24px;
+}
+
 h3 {
     font-size: 24px;
     color: #f9faf8;
@@ -42,6 +50,8 @@ a, p {
 p.dark {
     /* color undefined in style guide */
     color: #1f2937;
+    width: 160px;
+    text-align: center;
 }
 
 .hero {
@@ -51,6 +61,8 @@ p.dark {
     align-items: start;
     /* vertical padding might need adjusting */
     padding: 16px 60px;
+    /* TBC flex setting on .hero and .image-block to give them equal sizing */
+    flex: 0 1 auto;
 }
 
 button {
@@ -60,6 +72,7 @@ button {
     font-weight: bold;
     border-radius: 8px;
     padding: 8px 24px;
+    /* how to remove the default border? */
 }
 
 button.bordered {
@@ -71,4 +84,21 @@ button.bordered {
     width: 600px;
     margin: 24px;
     padding: 60px 24px;
+    /* see .hero */
+    flex: 0 1 auto;
 }
+
+.object-row {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 16px 60px;
+}
+
+.rounded-square {
+    width: 160px;
+    height: 160px;
+    border: 4px solid #3882f6;
+    border-radius: 8px;
+}
+
