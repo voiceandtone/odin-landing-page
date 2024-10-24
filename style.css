@@ -27,7 +27,7 @@ h2 {
     font-weight: 900;
     color: #1f2937;
     text-align: center;
-    padding: 24px;
+    padding: 16px;
 }
 
 h3 {
@@ -51,21 +51,29 @@ a, p {
 }
 
 p.dark {
-    /* color undefined in style guide */
     color: #1f2937;
     width: 160px;
     text-align: center;
+    padding: 8px 0;
 }
 
 .hero {
     background-color: #1f2937;
     display: flex;
-    justify-content: space-between;
-    align-items: start;
-    /* vertical padding might need adjusting */
-    padding: 16px 60px;
-    /* TBC flex setting on .hero and .image-block to give them equal sizing */
-    flex: 0 1 auto;
+    gap: 32px;
+    padding: 60px 60px 120px;
+}
+
+.lead-content {
+    width: 50%;
+}
+
+.image-block {
+    background-color: gray;
+    width: 50%;
+    padding: 90px 24px;
+    margin: auto;
+    text-align: center;
 }
 
 button {
@@ -75,29 +83,20 @@ button {
     font-weight: bold;
     border-radius: 8px;
     padding: 8px 24px;
-    /* how to remove the default border? */
+    border: 0;
     margin-top: 16px;
 }
 
-button.bordered {
+#bordered {
     border: 2px solid #f9faf8;
-}
-
-.image-block {
-    background-color: gray;
-    width: 600px;
-    margin: 24px;
-    padding: 60px 24px;
-    text-align: center;
-    /* see .hero */
-    flex: 0 1 auto;
 }
 
 .object-row {
     display: flex;
     justify-content: center;
-    gap: 24px;
+    gap: 32px;
     padding: 16px 60px;
+    margin-bottom: 60px;
 }
 
 .rounded-square {
@@ -110,7 +109,7 @@ button.bordered {
 .body-middle {
     /* is there a way to uniformly scale the height of each block? */
     background-color: #e5e7eb;
-    padding: 60px 120px;
+    padding: 120px 120px;
 }
 
 .quote {
@@ -118,7 +117,6 @@ button.bordered {
     font-style: italic;
     font-weight: lighter;
     color: #1f2937;
-    text-align: center;
 }
 
 .attribution {
@@ -132,7 +130,7 @@ button.bordered {
 .call-to-action {
     background-color: #3882f6;
     margin: 60px 60px;
-    padding: 60px 60px;
+    padding: 32px 120px;
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
